@@ -32,12 +32,28 @@ body
     border-radius: 10px;
     height: 300px;
 }
+.overlay{
+    background-color: hsl(178, 100%, 50%);
+    height :300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.img:hover .overlay{
+opacity: 0.5;
+}
+
 .name
 {
  margin: 20px 0;
  font-weight: 600;
  color: white;
  font-size: 22px;
+}
+.name:hover{
+    color:hsl(178, 100%, 50%);
 }
 .info{
     margin: 20px 0;
@@ -85,6 +101,9 @@ color:hsl(215, 32%, 27%);
 }
 .four{
     color: white;  
+}
+.four:hover{
+color: hsl(178, 100%, 50%);
 }
 .credit img{  
     height: 40px;
